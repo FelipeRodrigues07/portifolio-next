@@ -107,13 +107,19 @@ function Navbar() {
         ml="12px"
         display={{ base: "none", md: "flex" }}
         onClick={() => {
-          router.push("/product");
+          router.push("/about");
         }}
         _hover={{ bg: "gray.500" }} // underline é para efeito
         px="4"
         py="2"
         borderRadius={5}
-        bg={asPath === "/saldo" ? "gray.500" : ""}
+        boxShadow={
+          asPath === "/about"
+            ? isDark
+              ? " 0 1px 0 #fff"
+              : "0 1px 0 #000000"
+            : ""
+        }
       >
         <Text
           fontSize={{ base: "15px", md: "lg", lg: "xl" }}

@@ -12,10 +12,13 @@ import { BsSend } from "react-icons/bs";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { useRouter } from "next/router";
 
 function Social() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
+
+  const router = useRouter();
 
   return (
     <Flex direction="column">
@@ -45,7 +48,9 @@ function Social() {
               size="sm"
               mt={5}
               colorScheme="blue"
-              onClick={() => window.open("https://pawan.live")}
+              onClick={() => {
+                router.push("/contact");
+              }}
               fontSize="13px"
             >
               <Text mr="5px">Fale Comigo</Text>
@@ -53,31 +58,50 @@ function Social() {
             </Button>
             <Flex boxShadow=" 0 1px 0 #fff" w="100%" h="15px"></Flex>
             <Flex direction="row" justifyContent="center" mt="12px">
-              <IconButton icon={<FaLinkedin />} isRound="true"></IconButton>
+              <IconButton
+                icon={<FaLinkedin />}
+                isRound={true}
+                aria-label="Linkedin"
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/felipe-rodrigues-3182b7264"
+                  )
+                }
+              ></IconButton>
               <IconButton
                 ml={2}
                 icon={<FaInstagram />}
-                isRound="true"
+                isRound={true}
+                aria-label="Instagram"
+                onClick={() =>
+                  window.open("https://www.instagram.com/feliperodrigues497")
+                }
               ></IconButton>
               <IconButton
                 ml={2}
                 icon={<FaGithub />}
-                isRound="true"
+                isRound={true}
+                aria-label="Github"
+                onClick={() =>
+                  window.open("https://github.com/FelipeRodrigues07")
+                }
               ></IconButton>
               <IconButton
+                aria-label="Email"
                 ml={2}
                 icon={<AiOutlineMail />}
-                isRound="true"
+                isRound={true}
                 onClick={() =>
                   window.open(
-                    "mailto:feliperodriguesrs07@outlook.com?subject=&body=Ol%C3%A1%20Felipe%2C"
+                    "mailto:feliperodriguesrs07@outlook.com?subject=&body=Ol%C3%A1%2C%20tudo%20bem%3F"
                   )
                 }
               ></IconButton>
               <IconButton
                 ml={2}
                 icon={<IoLogoWhatsapp />}
-                isRound="true"
+                isRound={true}
+                aria-label="Whatsapp"
                 onClick={() =>
                   window.open(
                     "https://api.whatsapp.com/send?phone=5564999094004&text=Ol%C3%A1%20Felipe,%20tudo%20bem?"

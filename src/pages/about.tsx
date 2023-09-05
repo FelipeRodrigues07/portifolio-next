@@ -8,9 +8,13 @@ import {
   Button,
   useColorMode,
 } from "@chakra-ui/react";
-import { FaInstagram, FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
-import { RiWhatsappFill } from "react-icons/ri";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiJavascript,
+  SiMongodb,
+  SiTypescript,
+} from "react-icons/si";
 
 function Contact() {
   const { colorMode } = useColorMode();
@@ -25,13 +29,13 @@ function Contact() {
             base: "120px",
             sm: "120px",
             md: "200px",
-            lg: "200px",
+            lg: "150px",
             xl: "350",
           }}
         >
           <Card
             w="880px"
-            h={{ base: "450px", sm: "500px", md: "500px", lg: "450px" }}
+            h={{ base: "570px", sm: "650px", md: "600px", lg: "520px" }}
             ml="35px"
             mr="35px"
           >
@@ -41,9 +45,12 @@ function Contact() {
                 fontSize={{ base: "18px", sm: "25px", md: "25px", lg: "25px" }}
                 mt="10px"
                 mb="5px"
+                bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
+                bgClip="text"
               >
-                Meus Contatos
+                Sobre mim
               </Text>
+
               <Text
                 fontSize={{
                   base: "13px",
@@ -54,9 +61,12 @@ function Contact() {
                 mt="10px"
                 mb="5px"
               >
-                Tem uma pergunta, deseja colaborar ou saber mais sobre algum
-                serviço que ofereço? Entre em contato. Valorizo sua resposta e
-                estou ansioso para trabalhar com você.
+                Meu nome é Felipe Rodrigues e tenho dedicado minha carreira
+                profissional a criar soluções robustas e eficientes, abraçando
+                os desafios da web e do desenvolvimento mobile. Minha abordagem
+                focada no usuário, aliada à minha experiência técnica, me
+                capacita a entregar produtos de alta qualidade que atendem às
+                necessidades e expectativas dos clientes.
               </Text>
               <Flex direction="row" w="100%">
                 <Text
@@ -69,18 +79,7 @@ function Contact() {
                   color="#2B6CB0"
                   fontWeight="semibold"
                 >
-                  Telefone:
-                </Text>
-                <Text
-                  fontSize={{
-                    base: "13px",
-                    sm: "20px",
-                    md: "20px",
-                    lg: "20px",
-                  }}
-                  ml="7px"
-                >
-                  +55 64 99909-4004
+                  - Desenvolvendo interfaces e APIs com Javascript e Typescript
                 </Text>
               </Flex>
               <Flex direction="row" w="100%">
@@ -94,36 +93,33 @@ function Contact() {
                     lg: "20px",
                   }}
                 >
-                  Email:
-                </Text>
-                <Text
-                  fontSize={{
-                    base: "10px",
-                    sm: "20px",
-                    md: "20px",
-                    lg: "20px",
-                  }}
-                  ml="7px"
-                  mt="3px"
-                >
-                  feliperodriguesrs07@outlook.com
+                  - Cursando Engenharia de Software
                 </Text>
               </Flex>
 
               <Flex boxShadow=" 0 1px 0 #fff" w="100%" h="15px"></Flex>
+              <Text
+                color="#2B6CB0"
+                mt="5px"
+                fontWeight="semibold"
+                textAlign="center"
+                fontSize={{
+                  base: "13px",
+                  sm: "20px",
+                  md: "20px",
+                  lg: "20px",
+                }}
+              >
+                Tecnologias
+              </Text>
               <Flex direction="row" justifyContent="center" mt="12px">
                 <Button
                   size="md"
                   backgroundColor={isDark ? "#1A202C" : "#A8B4C2"}
-                  onClick={() =>
-                    window.open(
-                      "https://api.whatsapp.com/send?phone=5564999094004&text=Ol%C3%A1%20Felipe,%20tudo%20bem?"
-                    )
-                  }
                   fontSize="13px"
                 >
-                  <Text mr="5px">WhatsApp</Text>
-                  {<RiWhatsappFill fontSize="20px" color="#26B03D" />}
+                  <Text mr="5px">Typescript</Text>
+                  {<SiTypescript fontSize="20px" color="#2F76C4" />}
                 </Button>
                 <Button
                   ml={{
@@ -134,28 +130,20 @@ function Contact() {
                   }}
                   size="md"
                   backgroundColor={isDark ? "#1A202C" : "#A8B4C2"}
-                  onClick={() =>
-                    window.open(
-                      "mailto:feliperodriguesrs07@outlook.com?subject=&body=Ol%C3%A1%2C%20tudo%20bem%3F"
-                    )
-                  }
                   fontSize="13px"
                 >
-                  <Text mr="5px">Email</Text>
-                  {<AiOutlineMail fontSize="20px" />}
+                  <Text mr="5px">NodeJS</Text>
+                  {<FaNodeJs fontSize="20px" color="#3C8A43" />}
                 </Button>
               </Flex>
               <Flex direction="row" justifyContent="center" mt="12px">
                 <Button
                   size="md"
                   backgroundColor={isDark ? "#1A202C" : "#A8B4C2"}
-                  onClick={() =>
-                    window.open("https://github.com/FelipeRodrigues07")
-                  }
                   fontSize="13px"
                 >
-                  <Text mr="5px">GitHub</Text>
-                  {<FaGithub fontSize="20px" />}
+                  <Text mr="5px">React</Text>
+                  {<FaReact fontSize="20px" color="#2F76C4" />}
                 </Button>
                 <Button
                   ml={{
@@ -166,28 +154,20 @@ function Contact() {
                   }}
                   size="md"
                   backgroundColor={isDark ? "#1A202C" : "#A8B4C2"}
-                  onClick={() =>
-                    window.open("https://www.instagram.com/feliperodrigues497")
-                  }
                   fontSize="13px"
                 >
-                  <Text mr="5px">Instagran</Text>
-                  {<FaInstagram fontSize="20px" color="#F13164" />}
+                  <Text mr="5px">NextJS</Text>
+                  {<SiNextdotjs fontSize="20px" />}
                 </Button>
               </Flex>
               <Flex direction="row" justifyContent="center" mt="12px">
                 <Button
                   size="md"
                   backgroundColor={isDark ? "#1A202C" : "#A8B4C2"}
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/felipe-rodrigues-3182b7264"
-                    )
-                  }
                   fontSize="13px"
                 >
-                  <Text mr="5px">Linkedin</Text>
-                  {<FaLinkedin fontSize="20px" color="#0A66C2" />}
+                  <Text mr="5px">Javascript</Text>
+                  {<SiJavascript fontSize="20px" color="#FFCC00" />}
                 </Button>
                 <Button
                   ml={{
@@ -198,11 +178,10 @@ function Contact() {
                   }}
                   size="md"
                   backgroundColor={isDark ? "#1A202C" : "#A8B4C2"}
-                  onClick={() => window.open("https://t.me/+5564999094004")}
                   fontSize="13px"
                 >
-                  <Text mr="5px">Telegram</Text>
-                  {<FaTelegram fontSize="20px" color="#20A0DB" />}
+                  <Text mr="5px">MongoDB</Text>
+                  {<SiMongodb fontSize="20px" color="#229952" />}
                 </Button>
               </Flex>
             </CardBody>

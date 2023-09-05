@@ -37,7 +37,8 @@ function Profile() {
                 ml="100px"
                 colorScheme="blue"
                 icon={<CgWebsite />}
-                isRound="true"
+                isRound={true}
+                aria-label="front end"
               ></IconButton>
               <Text textAlign="center" fontSize="20px" mt="10px" mb="5px">
                 Front end
@@ -55,7 +56,8 @@ function Profile() {
               <IconButton
                 colorScheme="blue"
                 icon={<BsDatabase />}
-                isRound="true"
+                isRound={true}
+                aria-label="backend"
                 ml="100px"
               ></IconButton>
               <Text textAlign="center" fontSize="20px" mt="10px" mb="5px">
@@ -75,7 +77,8 @@ function Profile() {
                 ml="95px"
                 colorScheme="blue"
                 icon={<FaMobileAlt />}
-                isRound="true"
+                isRound={true}
+                aria-label="mobile"
               ></IconButton>
               <Text textAlign="center" fontSize="20px" mt="10px" mb="5px">
                 Mobile

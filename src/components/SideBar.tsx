@@ -65,13 +65,19 @@ function SidebarNav() {
         </ChakraLink>
         <ChakraLink
           onClick={() => {
-            router.push("/calca");
+            router.push("/about");
           }}
           _hover={{ bg: "gray.100" }} // underline é para efeito
           px="4"
           py="2"
           borderRadius={5}
-          bg={asPath === "/calca" ? "gray.200" : ""}
+          boxShadow={
+            asPath === "/about"
+              ? isDark
+                ? " 0 1px 0 #fff"
+                : "0 1px 0 #000000"
+              : ""
+          }
         >
           <Text fontSize="xl" fontWeight="medium">
             Sobre mim
@@ -99,13 +105,12 @@ function SidebarNav() {
         </ChakraLink>
         <ChakraLink
           onClick={() => {
-            router.push("/calca");
+            router.push("/");
           }}
           _hover={{ bg: "gray.100" }} // underline é para efeito
           px="4"
           py="2"
           borderRadius={5}
-          bg={asPath === "/calca" ? "gray.200" : ""}
         >
           <Text fontSize="xl" fontWeight="medium">
             Blogs
@@ -118,22 +123,55 @@ function SidebarNav() {
         </Text>
         <Flex>
           <Flex direction="row">
-            <IconButton icon={<FaLinkedin />} isRound="true"></IconButton>
+            <IconButton
+              icon={<FaLinkedin />}
+              isRound={true}
+              aria-label="Linkedin"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/felipe-rodrigues-3182b7264"
+                )
+              }
+            ></IconButton>
             <IconButton
               ml={2}
               icon={<FaInstagram />}
-              isRound="true"
+              isRound={true}
+              aria-label="Instagram"
+              onClick={() =>
+                window.open("https://www.instagram.com/feliperodrigues497")
+              }
             ></IconButton>
-            <IconButton ml={2} icon={<FaGithub />} isRound="true"></IconButton>
+            <IconButton
+              ml={2}
+              icon={<FaGithub />}
+              isRound={true}
+              aria-label="Github"
+              onClick={() =>
+                window.open("https://github.com/FelipeRodrigues07")
+              }
+            ></IconButton>
             <IconButton
               ml={2}
               icon={<AiOutlineMail />}
-              isRound="true"
+              isRound={true}
+              aria-label="Email"
+              onClick={() =>
+                window.open(
+                  "mailto:feliperodriguesrs07@outlook.com?subject=&body=Ol%C3%A1%2C%20tudo%20bem%3F"
+                )
+              }
             ></IconButton>
             <IconButton
               ml={2}
               icon={<IoLogoWhatsapp />}
-              isRound="true"
+              isRound={true}
+              aria-label="Whatsapp"
+              onClick={() =>
+                window.open(
+                  "https://api.whatsapp.com/send?phone=5564999094004&text=Ol%C3%A1%20Felipe,%20tudo%20bem?"
+                )
+              }
             ></IconButton>
           </Flex>
         </Flex>

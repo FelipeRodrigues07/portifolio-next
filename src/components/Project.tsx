@@ -9,8 +9,11 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 function Project() {
+  const router = useRouter();
+
   return (
     <Flex direction="column">
       <Flex
@@ -32,8 +35,9 @@ function Project() {
           <Card w="270px" h="400px">
             <CardBody>
               <Image
-                src="/project.jpeg"
-                alt="Green double couch with wooden legs"
+                src="/cadastro.jpeg"
+                h="175px"
+                alt="image not available"
                 borderRadius="lg"
               />
               <Text
@@ -43,7 +47,7 @@ function Project() {
                 mb="5px"
                 color="#2B6CB0"
               >
-                Api-typscript-next
+                Inventory-Control-NextJS
               </Text>
               <Text fontSize="13px">
                 Descrição: Sistema de Gerenciamento de estoque.
@@ -56,99 +60,9 @@ function Project() {
                   size="sm"
                   mt={5}
                   colorScheme="blue"
-                  onClick={() => window.open("https://pawan.live")}
-                  fontSize="13px"
-                >
-                  Ver Projeto
-                </Button>
-                <Button
-                  ml="12px"
-                  size="sm"
-                  mt={5}
-                  backgroundColor="#808080"
-                  onClick={() => window.open("https://pawan.live")}
-                  fontSize="13px"
-                >
-                  <Text mr="5px">Repositório</Text>
-                  {<FaGithub fontSize="20px" />}
-                </Button>
-              </Flex>
-            </CardBody>
-          </Card>
-          <Card w="270px" h="400px">
-            <CardBody>
-              <Image
-                src="/project.jpeg"
-                alt="Green double couch with wooden legs"
-                borderRadius="lg"
-              />
-              <Text
-                textAlign="center"
-                fontSize="20px"
-                mt="10px"
-                mb="5px"
-                color="#2B6CB0"
-              >
-                Api-typscript-next
-              </Text>
-              <Text fontSize="13px">
-                Descrição: Sistema de Gerenciamento de estoque.
-              </Text>
-              <Text fontSize="13px" mt="10px" mb="5px">
-                Tecnologias: Typscript,NextJS, ChakraUI
-              </Text>
-              <Flex direction="row">
-                <Button
-                  size="sm"
-                  mt={5}
-                  colorScheme="blue"
-                  onClick={() => window.open("https://pawan.live")}
-                  fontSize="13px"
-                >
-                  Ver Projeto
-                </Button>
-                <Button
-                  ml="12px"
-                  size="sm"
-                  mt={5}
-                  backgroundColor="#808080"
-                  onClick={() => window.open("https://pawan.live")}
-                  fontSize="13px"
-                >
-                  <Text mr="5px">Repositório</Text>
-                  {<FaGithub fontSize="20px" />}
-                </Button>
-              </Flex>
-            </CardBody>
-          </Card>
-          <Card w="270px" h="400px">
-            <CardBody>
-              <Image
-                src="/project.jpeg"
-                alt="Green double couch with wooden legs"
-                borderRadius="lg"
-              />
-              <Text
-                textAlign="center"
-                fontSize="20px"
-                mt="10px"
-                mb="5px"
-                color="#2B6CB0"
-              >
-                Api-typscript-next
-              </Text>
-              <Text fontSize="13px">
-                Descrição: Sistema de Gerenciamento de estoque.
-              </Text>
-              <Text fontSize="13px" mt="10px" mb="5px">
-                Tecnologias: Typscript,NextJS, ChakraUI
-              </Text>
-              <Flex direction="row">
-                <Button
-                  size="sm"
-                  mt={5}
-                  colorScheme="blue"
-                  onClick={() => window.open("https://pawan.live")}
+                  onClick={() =>
+                    window.open("https://inventory-control-next-js.vercel.app/")
+                  }
                   fontSize="13px"
                 >
                   Ver Projeto
@@ -160,7 +74,91 @@ function Project() {
                   backgroundColor="#808080"
                   onClick={() =>
                     window.open(
-                      "https://github.com/FelipeRodrigues07/Inventory-Control-NextJS-ChakraUI"
+                      "https://github.com/FelipeRodrigues07/Inventory-Control-NextJS-ChakraUI.git"
+                    )
+                  }
+                  fontSize="13px"
+                >
+                  <Text mr="5px">Repositório</Text>
+                  {<FaGithub fontSize="20px" />}
+                </Button>
+              </Flex>
+            </CardBody>
+          </Card>
+          <Card w="270px" h="400px">
+            <CardBody>
+              <Image
+                h="175px"
+                src="/project.jpeg"
+                alt="image not available"
+                borderRadius="lg"
+              />
+              <Text
+                textAlign="center"
+                fontSize="20px"
+                mt="10px"
+                mb="5px"
+                color="#2B6CB0"
+              >
+                FRSstore
+              </Text>
+              <Text fontSize="13px">
+                Descrição: interface uma loja virtual com uma interface
+                intuitiva.
+              </Text>
+              <Text fontSize="13px" mt="10px" mb="5px">
+                Tecnologias: Typscript,NextJS, ChakraUI
+              </Text>
+              <Flex justifyContent="center">
+                <Button
+                  size="sm"
+                  mt={5}
+                  backgroundColor="#808080"
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/FelipeRodrigues07/frsstore-next.git"
+                    )
+                  }
+                  fontSize="13px"
+                >
+                  <Text mr="5px">Repositório</Text>
+                  {<FaGithub fontSize="20px" />}
+                </Button>
+              </Flex>
+            </CardBody>
+          </Card>
+          <Card w="270px" h="400px">
+            <CardBody>
+              <Image
+                h="175px"
+                src="/api.jpeg"
+                alt="image not available"
+                borderRadius="lg"
+              />
+              <Text
+                textAlign="center"
+                fontSize="20px"
+                mt="10px"
+                mb="5px"
+                color="#2B6CB0"
+              >
+                Api-typescript-next
+              </Text>
+              <Text fontSize="13px">
+                Descrição: É uma API REST abrangente com operações CRUD de
+                usuário
+              </Text>
+              <Text fontSize="13px" mt="10px" mb="5px">
+                Tecnologias: Typscript, ExpressJS, MongoDB, NodeJS.
+              </Text>
+              <Flex justifyContent="center">
+                <Button
+                  size="sm"
+                  mt={5}
+                  backgroundColor="#808080"
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/FelipeRodrigues07/api-typescript-users.git"
                     )
                   }
                   fontSize="13px"
@@ -180,7 +178,9 @@ function Project() {
       >
         <Button
           colorScheme="blue"
-          onClick={() => window.open("https://pawan.live")}
+          onClick={() => {
+            router.push("/projects");
+          }}
           fontSize={{ base: "14px", sm: "17px", md: "17px", lg: "17px" }}
         >
           Ver mais projetos
