@@ -46,8 +46,8 @@ function Section() {
             </Text>
             <Text color={isDark ? "gray.200" : "gray.500"}>
               Sou um engenheiro de software especializado na criação de
-              aplicativos e sites de alto desempenho, com destaqueem tecnologias
-              como NodeJs, Nextjs, Typescript, React-Native.
+              aplicativos e sites de alto desempenho, com destaque em
+              tecnologias como NodeJs, Nextjs, Typescript, React-Native.
             </Text>
             <Button
               mt={8}
