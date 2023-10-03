@@ -32,7 +32,7 @@ function Projects() {
             columns={[1, 2, 2, 3]}
             w="100"
           >
-            <Card w="270px" h="400px">
+            <Card w="270px" h="400px" boxShadow="2xl">
               <CardBody>
                 <Image
                   h="175px"
@@ -74,7 +74,7 @@ function Projects() {
                 </Flex>
               </CardBody>
             </Card>
-            <Card w="270px" h="400px">
+            <Card w="270px" h="400px" boxShadow="2xl">
               <CardBody>
                 <Image
                   src="/cadastro.jpeg"
@@ -129,7 +129,7 @@ function Projects() {
                 </Flex>
               </CardBody>
             </Card>
-            <Card w="270px" h="400px">
+            <Card w="270px" h="400px" boxShadow="2xl">
               <CardBody>
                 <Image
                   h="175px"
@@ -171,7 +171,7 @@ function Projects() {
                 </Flex>
               </CardBody>
             </Card>
-            <Card w="270px" h="400px">
+            <Card w="270px" h="400px" boxShadow="2xl">
               <CardBody>
                 <Image
                   h="175px"
@@ -213,7 +213,7 @@ function Projects() {
                 </Flex>
               </CardBody>
             </Card>
-            <Card w="270px" h="400px">
+            <Card w="270px" h="400px" boxShadow="2xl">
               <CardBody>
                 <Image
                   h="175px"
@@ -255,7 +255,7 @@ function Projects() {
                 </Flex>
               </CardBody>
             </Card>
-            <Card w="270px" h="400px">
+            <Card w="270px" h="400px" boxShadow="2xl">
               <CardBody>
                 <Image
                   h="175px"

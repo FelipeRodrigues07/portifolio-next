@@ -38,6 +38,7 @@ function Contact() {
             h={{ base: "570px", sm: "650px", md: "600px", lg: "520px" }}
             ml="35px"
             mr="35px"
+            boxShadow="2xl"
           >
             <CardBody>
               <Text

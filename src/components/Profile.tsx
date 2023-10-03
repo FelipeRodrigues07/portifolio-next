@@ -31,7 +31,7 @@ function Profile() {
           columns={[1, 2, 2, 3]}
           w="100"
         >
-          <Card w="270px">
+          <Card w="270px" boxShadow="2xl">
             <CardBody>
               <IconButton
                 ml="100px"
@@ -51,7 +51,7 @@ function Profile() {
               </Text>
             </CardBody>
           </Card>
-          <Card w="270px">
+          <Card w="270px" boxShadow="2xl">
             <CardBody>
               <IconButton
                 colorScheme="blue"
@@ -71,7 +71,7 @@ function Profile() {
               </Text>
             </CardBody>
           </Card>
-          <Card w="270px">
+          <Card w="270px" boxShadow="2xl">
             <CardBody>
               <IconButton
                 ml="95px"

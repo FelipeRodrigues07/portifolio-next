@@ -31,6 +31,7 @@ function Social() {
           h={{ base: "300px", sm: "300px", md: "250px", lg: "250" }}
           ml="35px"
           mr="35px"
+          boxShadow="2xl"
         >
           <CardBody>
             <Text
