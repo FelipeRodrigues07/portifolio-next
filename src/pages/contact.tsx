@@ -26,7 +26,7 @@ function Contact() {
             sm: "120px",
             md: "200px",
             lg: "200px",
-            xl: "350",
+            xl: "300px",
           }}
         >
           <Card
