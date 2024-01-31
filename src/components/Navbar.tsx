@@ -48,6 +48,7 @@ function Navbar() {
       w="100%"
       mx="auto"
       maxW={1700}
+      boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
     >
       <Avatar
         ml={{ base: "15px", sm: "15px", md: "8", lg: "8", xl: "200px" }}
