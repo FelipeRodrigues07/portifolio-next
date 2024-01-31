@@ -40,18 +40,21 @@ function Navbar() {
 
   return (
     <Flex
-      backgroundColor={isDark ? "#1A202C" : "#FFFFFF"}
       position="fixed"
       h="65px"
       align="center"
       zIndex="1000"
+      backgroundColor={isDark ? "#1A202C" : "#FFFFFF"}
       w="100%"
       mx="auto"
-      maxW={1700}
+      maxW={1900}
       boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
+      left="50%"
+      transform="translateX(-50%)"
     >
       <Avatar
-        ml={{ base: "15px", sm: "15px", md: "8", lg: "8", xl: "200px" }}
+       /* ml={{ base: "15px", sm: "15px", md: "8", lg: "8", xl: "200px" }}*/
+       ml={{ base: "20px", sm: "15px", md: "8", lg: "8", xl: "8px" }}
         size="sm"
         src="/logo.png"
       ></Avatar>
@@ -68,8 +71,8 @@ function Navbar() {
         px="4"
         py="2"
         borderRadius={5}
-        boxShadow={
-          asPath === "/" ? (isDark ? " 0 1px 0 #fff" : "0 1px 0 #000000") : ""
+        borderBottom={
+          asPath === "/" ? (isDark ? "1px solid #fff" : "1px solid #000") : ""
         }
       >
         <Text
@@ -89,11 +92,11 @@ function Navbar() {
         px="4"
         py="2"
         borderRadius={5}
-        boxShadow={
+        borderBottom={
           asPath === "/projects"
             ? isDark
-              ? " 0 1px 0 #fff"
-              : "0 1px 0 #000000"
+              ? "1px solid #fff"
+              : "1px solid #000"
             : ""
         }
       >
@@ -114,11 +117,11 @@ function Navbar() {
         px="4"
         py="2"
         borderRadius={5}
-        boxShadow={
+        borderBottom={
           asPath === "/about"
             ? isDark
-              ? " 0 1px 0 #fff"
-              : "0 1px 0 #000000"
+              ? "1px solid #fff"
+              : "1px solid #000"
             : ""
         }
       >
@@ -139,11 +142,11 @@ function Navbar() {
         px="4"
         py="2"
         borderRadius={5}
-        boxShadow={
+        borderBottom={
           asPath === "/contact"
             ? isDark
-              ? " 0 1px 0 #fff"
-              : "0 1px 0 #000000"
+              ? "1px solid #fff"
+              : "1px solid #000"
             : ""
         }
       >

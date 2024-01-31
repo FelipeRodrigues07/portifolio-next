@@ -7,12 +7,16 @@ import {
   SimpleGrid,
   Button,
   Text,
+  useColorMode
 } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
 import { useRouter } from "next/router";
 
 function Project() {
   const router = useRouter();
+  
+  const { colorMode, toggleColorMode } = useColorMode();
+  const isDark = colorMode === "dark";
 
   return (
     <Flex direction="column">
@@ -32,7 +36,7 @@ function Project() {
           columns={[1, 2, 2, 3]}
           w="100"
         >
-          <Card w="270px" h="400px" boxShadow="2xl">
+          <Card w="270px" h="400px" boxShadow="2xl"  _hover={{ boxShadow: isDark ? " " : "dark-lg" }}>
             <CardBody>
               <Image
                 src="/cadastro.jpeg"
@@ -85,7 +89,7 @@ function Project() {
               </Flex>
             </CardBody>
           </Card>
-          <Card w="270px" h="400px" boxShadow="2xl">
+          <Card w="270px" h="400px" boxShadow="2xl" _hover={{ boxShadow: isDark ? " " : "dark-lg" }}>
             <CardBody>
               <Image
                 h="175px"
@@ -127,7 +131,7 @@ function Project() {
               </Flex>
             </CardBody>
           </Card>
-          <Card w="270px" h="400px" boxShadow="2xl">
+          <Card w="270px" h="400px" boxShadow="2xl" _hover={{ boxShadow: isDark ? " " : "dark-lg" }}>
             <CardBody>
               <Image
                 h="175px"
