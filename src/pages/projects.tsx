@@ -8,10 +8,15 @@ import {
   SimpleGrid,
   Button,
   Text,
+  useColorMode
 } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
 
 function Projects() {
+
+  const { colorMode, toggleColorMode } = useColorMode();
+  const isDark = colorMode === "dark";
+
   return (
     <Flex direction="column" w="100%" mt="0">
       <Navbar />
@@ -54,7 +59,7 @@ function Projects() {
                   intuitiva.
                 </Text>
                 <Text fontSize="13px" mt="10px" mb="5px">
-                  Tecnologias: Typscript,NextJS, ChakraUI.
+                  Tecnologias: TypeScript, NextJS, ChakraUI.
                 </Text>
                 <Flex justifyContent="center">
                   <Button
@@ -95,7 +100,7 @@ function Projects() {
                   Descrição: Sistema de Gerenciamento de estoque.
                 </Text>
                 <Text fontSize="13px" mt="10px" mb="5px">
-                  Tecnologias: Typscript,NextJS, ChakraUI
+                  Tecnologias: TypeScript, NextJS, ChakraUI
                 </Text>
                 <Flex direction="row">
                   <Button
@@ -144,14 +149,14 @@ function Projects() {
                   mb="5px"
                   color="#2B6CB0"
                 >
-                  Api-typescript-next
+                  Api-TypeScript-next
                 </Text>
                 <Text fontSize="13px">
                   Descrição: É uma API REST abrangente com operações CRUD de
                   usuário
                 </Text>
                 <Text fontSize="13px" mt="10px" mb="5px">
-                  Tecnologias: Typscript, ExpressJS, MongoDB, NodeJS.
+                  Tecnologias: TypeScript, ExpressJS, MongoDB, NodeJS.
                 </Text>
                 <Flex justifyContent="center">
                   <Button
@@ -217,7 +222,7 @@ function Projects() {
               <CardBody>
                 <Image
                   h="175px"
-                  src="/energy.jpeg"
+                  src="/unlocking.jpeg"
                   alt="image not available"
                   borderRadius="lg"
                 />
@@ -228,29 +233,27 @@ function Projects() {
                   mb="5px"
                   color="#2B6CB0"
                 >
-                  openergy-web
+                  UnlockingEnglish
                 </Text>
                 <Text fontSize="13px">
-                  Software que oferece informações sobre fontes de energia limpa
-                  e sustentável.
+                  Site sobre um curso de Inglês.
                 </Text>
                 <Text fontSize="13px" mt="10px" mb="5px">
-                  Tecnologias: React Native, Javascript.
+                Tecnologias: TypeScript, NextJS, ChakraUI
                 </Text>
                 <Flex justifyContent="center">
-                  <Button
+                <Button
                     size="sm"
-                    mt={5}
-                    backgroundColor="#808080"
+                    mt="36px"
+                    colorScheme="blue"
                     onClick={() =>
                       window.open(
-                        "https://github.com/FelipeRodrigues07/openergy-web.git"
+                        "https://unlocking-english.vercel.app/"
                       )
                     }
                     fontSize="13px"
                   >
-                    <Text mr="5px">Repositório</Text>
-                    {<FaGithub fontSize="20px" />}
+                    Ver Projeto
                   </Button>
                 </Flex>
               </CardBody>
@@ -297,8 +300,68 @@ function Projects() {
                 </Flex>
               </CardBody>
             </Card>
+            <Card w="270px" h="400px" boxShadow="2xl">
+              <CardBody>
+                <Image
+                  h="175px"
+                  src="/energy.jpeg"
+                  alt="image not available"
+                  borderRadius="lg"
+                />
+                <Text
+                  textAlign="center"
+                  fontSize="20px"
+                  mt="10px"
+                  mb="5px"
+                  color="#2B6CB0"
+                >
+                  openergy-web
+                </Text>
+                <Text fontSize="13px">
+                  Software que oferece informações sobre fontes de energia limpa
+                  e sustentável.
+                </Text>
+                <Text fontSize="13px" mt="10px" mb="5px">
+                  Tecnologias: React Native, Javascript.
+                </Text>
+                <Flex justifyContent="center">
+                  <Button
+                    size="sm"
+                    mt={5}
+                    backgroundColor="#808080"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/FelipeRodrigues07/openergy-web.git"
+                      )
+                    }
+                    fontSize="13px"
+                  >
+                    <Text mr="5px">Repositório</Text>
+                    {<FaGithub fontSize="20px" />}
+                  </Button>
+                </Flex>
+              </CardBody>
+            </Card>
           </SimpleGrid>
         </Flex>
+      </Flex>
+      <Flex
+        w="100%"
+        boxShadow={isDark ? " 0 1px 0 #fff" : "0 1px 0 #000000"}
+        h="15px"
+        mb={{ base: "18px", sm: "25px", md: "30px", lg: "40px" }}
+        mt="100px"
+      ></Flex>
+      <Flex
+        direction="row"
+        justifyContent="center"
+        w="50%"
+        mx="auto"
+        mb={{ base: "18px", sm: "25px", md: "30px", lg: "40px" }}
+      >
+        <Text fontSize={{ base: "8px", sm: "15px", md: "15px", lg: "15px" }}>
+          © 2023 Felipe Rodrigues. All Rights Reserved.
+        </Text>
       </Flex>
     </Flex>
   );

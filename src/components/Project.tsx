@@ -57,7 +57,7 @@ function Project() {
                 Descrição: Sistema de Gerenciamento de estoque.
               </Text>
               <Text fontSize="13px" mt="10px" mb="5px">
-                Tecnologias: Typscript,NextJS, ChakraUI
+                Tecnologias: TypeScript ,NextJS, ChakraUI
               </Text>
               <Flex direction="row">
                 <Button
@@ -111,7 +111,7 @@ function Project() {
                 intuitiva.
               </Text>
               <Text fontSize="13px" mt="10px" mb="5px">
-                Tecnologias: Typscript,NextJS, ChakraUI
+                Tecnologias: TypeScript ,NextJS, ChakraUI
               </Text>
               <Flex justifyContent="center">
                 <Button
@@ -146,14 +146,14 @@ function Project() {
                 mb="5px"
                 color="#2B6CB0"
               >
-                Api-typescript-next
+                Api-TypeScript-next
               </Text>
               <Text fontSize="13px">
                 Descrição: É uma API REST abrangente com operações CRUD de
                 usuário
               </Text>
               <Text fontSize="13px" mt="10px" mb="5px">
-                Tecnologias: Typscript, ExpressJS, MongoDB, NodeJS.
+                Tecnologias: TypeScript, ExpressJS, MongoDB, NodeJS.
               </Text>
               <Flex justifyContent="center">
                 <Button
